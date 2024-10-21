@@ -1,0 +1,135 @@
+.header{
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 0.5fr;
+  padding: 20px;
+  gap: 1rem;
+  font-family: 'font2',sans-serif;
+}
+.header .header1{
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.header .header1 img{
+  height: 40px;
+  border-radius: 30px;
+}
+
+.header .header2 .header2-search{
+  height: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header .header2-search p{
+  position: absolute;
+  left: 0;
+  padding-left: 10px;
+}
+
+.header .header2-search input{
+  padding-left: 35px;
+  height: 40px;
+  width: 30vw;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 30px;
+}
+.header2-search input:focus {
+  outline: none;
+}
+
+.header .headers2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header4-1{
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 3fr 1.3fr;
+  padding: 10px;
+  gap: 1rem;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  display: none;
+  opacity: 1;
+  font-family: 'font2',sans-serif;
+  box-shadow: 0px 5px 5px rgba(0,0,0, 0.2);
+  transition: all 1s ease-in-out;
+  border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+
+
+.header4-1 input{
+  padding-left: 40px;
+  height: 30px;
+  width: 100%;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 30px;
+}
+
+.header4-1 input:focus{
+  outline: none;
+}
+
+.header4-11-search{
+  height: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header4-11-search p{
+  padding-left: 10px;
+  position: absolute;
+  font-size: 20px;
+}
+.header33{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.header33 p{
+  cursor: pointer;
+}
+
+.header33 .header-menu{
+  display: none;
+}
+
+@media screen and (max-width:400px) {
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width:780px) {
+  .header .headers2 {
+    display: none;
+  }
+
+  .header {
+    grid-template-columns: 1fr 0.5fr;
+  }
+
+  .header4-1 {
+    display: grid;
+  }
+    .header33 .header-menu {
+      display: contents;
+    }
+}
+
+
+
+@media screen and (max-width:1200px) {}

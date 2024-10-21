@@ -1,0 +1,190 @@
+.teamdetails1{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.team-members{
+  padding: 20px 10px;
+}
+
+.teams .user-details img{
+  height: 40px;
+  border-radius: 35px;
+}
+
+.teams .user-details{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.teams .userss{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px 10px 20px 10px;
+  justify-content: space-between;
+  border-radius: 25px;
+}
+
+.team-members p{
+  font-size: 12px;
+}
+
+.team-members .user-name-email{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.team-members .manager-span{
+  /* animation: color 3s infinite ease-in-out; */
+  font-size: 30px;
+  color: green;
+  text-shadow: 1px 1px 5px rgb(60, 255, 0);
+
+}
+
+.team-members .manager-span {
+  font-size: 20px;
+  color: rgb(0, 255, 0);
+  animation: blink 0.6s infinite;
+}
+
+.teamdatas{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px 10px;
+}
+
+.teamdatas .teamdata2 p{
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 12px;
+  color: rgb(79, 200, 236);
+}
+
+@keyframes blink {
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 0.25;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  75%{
+    opacity: 0.75;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.teamdata2 .pop-teamcode{
+  position:absolute;
+  background-color: rgba(185, 185, 185,0.1);
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 4px;
+
+}
+.teams .add-member-button p{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 16px;
+  color: grey;
+}
+
+.teams .add-member-button p{
+  background-color: rgb(255, 255, 255);
+  padding: 10px 10px;
+  border-radius: 25px;
+  border: 1px solid rgb(233, 233, 233);
+  cursor: pointer;
+}
+
+.teams .add-member-button{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 20px;
+}
+
+.teams .add-member-button p{
+  font-size: 12px;
+}
+
+.teamdata2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.teamdata2 p{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid rgb(231, 231, 231);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgb(196, 196, 196);
+}
+.delete-team-btn{
+  background-color: rgb(255, 166, 0);
+}
+
+.teams .add-member-btn:hover{
+  box-shadow: 1px 1px 5px rgb(201, 201, 201);
+}
+.teams .delete-team-btn:hover {
+  box-shadow: 1px 1px 5px rgb(255, 180, 180);
+}
+
+@media screen and (max-width:400px) {
+  .teamdata1 h1{
+    font-size: 1.5rem;
+  }
+  .team-members{
+    overflow: hidden;
+  }
+  .teams .user-details p,.user-access p{
+    font-size: 10px;
+  }
+    .teamdata1 p {
+      font-size: 1rem;
+    }
+    .userss{
+      width: 85vw;
+    }
+    .team-members{
+      padding: 20px 0 20px 0;
+
+    }
+    .add-member-btn,.delete-team-btn{
+      width: 35vw;
+    }
+    .teamdata2 p{
+      width: 35vw;
+    }
+    .user-namedet {
+      flex-direction: column;
+      align-items: start;
+      gap: 1rem;
+    }
+    .teamdata1{
+      text-align: center;
+      margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:810px) {
+  .teamdetails1{
+    grid-template-columns: 1fr;
+  }
+}

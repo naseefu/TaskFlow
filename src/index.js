@@ -2,16 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import { UserProvider } from './components/Context/UserContext';
+import { ProjectProvider } from './components/Context/ProjectContext';
+import { HelmetProvider } from 'react-helmet-async';
+import { TeamProvider } from './components/Context/TeamDet';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  
+  <UserProvider>
+    <ProjectProvider>
+      <HelmetProvider>
+        <TeamProvider>
+      <App />
+      </TeamProvider>
+      </HelmetProvider>
+    </ProjectProvider>
+  </UserProvider>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+);

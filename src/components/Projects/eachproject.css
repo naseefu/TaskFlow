@@ -1,0 +1,59 @@
+.eachpro .eachpro-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eachpro{
+  padding: 20px;
+}
+.eachpro .pro1right{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.eachpro .invite-btns{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.eachpro .pro1right button,.eachpro .each-invite{
+  background-color: white;
+  padding: 10px 15px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  box-shadow: 1px 1px 5px rgb(224, 224, 224);
+}
+.eachpro .pro1right button{
+    margin: auto;
+}
+.eachpro .eachpro-2{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width:375px) {
+  .pro1right{
+    flex-direction: column;
+  }
+  .eachpro{
+    padding: 10px 8px;
+  }
+  .pro1left h1{
+    font-size: 24px;
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width:810px) {
+  .eachpro-1{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .eachpro .invite-btns{
+    flex-direction: row;
+  }
+}

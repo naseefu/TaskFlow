@@ -1,0 +1,92 @@
+.notification .recruits .rec-count{
+  padding: 10px 10px 10px 20px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 81, 0,0.7);
+  border-radius: 20px;
+  color: white;
+}
+.notification{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-bottom: 40px;
+  border-radius: 20px 0 0 0;
+}
+.notification .recruiter{
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 1.4fr 1fr 1fr 0.2fr;
+  padding: 30px 0px 30px 20px;
+  gap: 1rem;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.993);
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+.notification .recruiter img{
+  height: 25px;
+  width:auto;
+  background-color: rgb(226, 226, 226);
+}
+.notification .recruiter .recruit-icon .recruit-img{
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px solid rgb(165, 165, 165);
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+    background-color: rgb(226, 226, 226);
+}
+
+
+.notification .recruiter .recruit-icon{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.notification .recruiter .recruit-user, .notification .recruiter .recruit-team{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.6rem;
+}
+
+.notification .recruiter .recruit-user p{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.notification .recruiter .agotime{
+  
+  position:absolute;
+  top: 0;
+  right: 0;
+  margin: 30px;
+  color: grey;
+}
+.notification .recruit-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+
+.notification .recruit-btn button{
+  padding: 10px 20px;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.notification .recruit-btn .accept-rec:hover{
+  box-shadow: 2px 2px 20px green;
+}
+.notification .recruit-btn .reject-rec:hover {
+  box-shadow: 2px 2px 20px red;
+}

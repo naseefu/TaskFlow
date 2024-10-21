@@ -1,0 +1,77 @@
+.activity .act{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity{
+  font-family: 'font2', sans-serif;
+  padding: 20px;
+  margin: 0;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+  
+}
+
+.activity .act h3{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'font2',sans-serif;
+}
+
+.activity .act p{
+  padding: 3px 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+}
+
+.activity .act .week1{
+  background-color: black ;
+  color: white;
+}
+
+.activity .act .week2{
+  background-color: rgb(216, 216, 216);
+  
+}
+
+.bars {
+  width: 100%;
+  /* Allow the chart to resize */
+  max-width: 100%;
+  /* Prevent overflow */
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+}
+
+.activity .horizontal-line{
+  height: 2px;
+    /* Adjust thickness */
+    background: repeating-linear-gradient(to right,
+        transparent,
+        transparent 10px,
+        /* Adjust the length of the dash */
+        rgb(189, 189, 189) 10px,
+        /* Adjust the color of the dash */
+        rgb(189, 189, 189) 20px
+        /* Adjust the gap between dashes */
+      );
+      position: 'absolute'; 
+      top: '50%'; 
+      width: '90%'
+}
+@media screen and (max-width:370px) {
+  .activity {
+    width: 90vw;
+  }
+}
+@media screen and (max-width:1000px) {
+  .activity .horizontal-line{
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+.jointeam{
+  font-family: "font2",sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.jointeam .join-title{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.jointeam .join-title p{
+  color: grey;
+}
+
+.jointeam .joincode{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 14px;
+}
+
+.joincode input:focus{
+  border: 2px solid blue;
+  outline: none;
+}

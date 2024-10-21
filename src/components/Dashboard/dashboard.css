@@ -1,0 +1,214 @@
+.dash{
+  padding:20px;
+  background-color: #f9f9f9;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100%;
+  gap: 1rem;
+  border-radius: 20px 0 0 0;
+
+}
+
+@media screen and (max-width:1000px) {
+  .dash{
+    border-radius: 0;
+  }
+}
+@media screen and (min-width:1400px) {
+  .dash{
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
+  }
+}
+.dash .dash1{
+  overflow: hidden;
+  padding-right: 0px;
+  padding-top: 20px;
+  /* border-right: 1px solid rgb(224, 224, 224); */
+}
+
+.dash .dash2{
+  width: 100%;
+  max-width: 100%;
+}
+
+.dash1-1{
+  border-radius: 20px;
+}
+.dash1-11{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.dash1-11 h1{
+  font-size: 20px;
+  padding-bottom: 6px;
+}
+.dash1-11 p{
+  font-size: 13px;
+}
+.dash1-11 p span{
+  color: #4179fc;
+}
+
+.dash1-11 button{
+  padding: 8px 15px;
+  border: none;
+  background-color: rgba(220, 233, 255, 255);
+  color: #4179fc;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.dash1{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.dash1-11{
+  padding-top: 20px;
+}
+.dash1-1{
+  background-color: transparent;
+}
+
+.progress-bar-container {
+  display: flex;
+  /* Use flexbox to align segments */
+  width: 250px;
+  /* Full width */
+  background-color: transparent;
+  /* Light grey background for overall container */
+  border-radius: 7px;
+  /* Rounded corners */
+  position: relative;
+  gap: 0.2rem;
+  /* Position for text alignment */
+  height: 6px;
+  /* Height of the progress bar */
+}
+
+.progress-segment {
+  flex: 1;
+  /* Each segment takes equal space */
+  background-color: #bebebe;
+  /* Light grey background for segments */
+  margin: 0 1px;
+  border-radius: 20px;
+  /* Small gap between segments */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for fill color */
+}
+
+.progress-segment.filled {
+  background-color: #ffffff;
+  /* Color of the filled segments */
+}
+
+.progress-segment.partial {
+  background: linear-gradient(to right, #ffffff 75%, #bebebe 75%);
+  /* 75% filled, 25% unfilled */
+}
+
+.progress-text {
+  position: absolute;
+  /* Position text over the progress bar */
+  left: 50%;
+  /* Center horizontally */
+  top: 50%;
+  /* Center vertically */
+  transform: translate(-50%, -50%);
+  /* Center alignment */
+  font-weight: bold;
+  /* Bold text */
+}
+.dash1-12{
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-left: 20px;
+
+  align-items: center;
+  justify-content: start;
+}
+
+.dash1-12::-webkit-scrollbar{
+  scrollbar-width: none;
+  display: none;
+}
+
+.dash1-12-card1{
+  margin-bottom: 40px;
+  background-color: #0055ff;
+  color:white;
+  padding: 40px 20px; 
+  width: fit-content;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  flex-shrink: 0;
+}
+
+.dash1-12-card1 img{
+  height: 35px;
+}
+
+.dash1-12-card1 h1{
+  font-size: 25px;
+}
+.card-progress .progress{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  font-size: 13px;
+}
+.card-members .member-pics{
+  display: flex;
+  align-items: center;
+}
+.card-members{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-members img{
+  border-radius: 30px;
+}
+.card-members .img1,.dash .card-members .img2,.dash .card-members .img3 {
+  margin-left: -15px;
+}
+.card-members .img3{
+  background-color: violet;
+  padding: 8px 6px;
+  border-radius: 20px;
+}
+
+ .deadline p{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+.deadline span{
+  font-size: 15px;
+}
+.dash1-2{
+  padding-top: 40px;
+}
+.dash2-2{
+  padding-top: 40px;
+}
+
+@media screen and (max-width:370px) {
+  .dash1-2{
+    width: 90vw;
+    padding: 10px 0;
+  }
+  .dash{
+    padding: 6px;
+  }
+}

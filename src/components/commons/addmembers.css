@@ -1,0 +1,66 @@
+.popup .add-success{
+  animation: success1 1s ease-in-out;
+}
+
+.popup{
+  perspective: 1000px;
+}
+
+.popup .popup-content{
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  animation: pop1 1s ease-in-out;
+}
+
+.task-name{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.addtask .adds-btn{
+  padding: 5px 10px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 12px;
+
+}
+.addtask .rem-btn {
+  padding: 6px 14px;
+  border: none;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+  font-size: 12px;
+  color: white;
+}
+
+@keyframes success1 {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes pop1 {
+  from {
+    transform: translateZ(-200px) translate3d(-100);
+    scale: 0;
+    opacity: 0;
+  }
+
+  to {
+    transform:translateZ(0) translate3d(0);
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .popup-content input,
+    .popup-content textarea{
+      width: 60vw;
+    }
+}
